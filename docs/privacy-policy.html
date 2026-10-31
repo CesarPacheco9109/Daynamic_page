@@ -1,5 +1,5 @@
 <!DOCTYPE html><!--  Last Published: Thu Apr 04 2024 21:43:58 GMT+0000 (Coordinated Universal Time)  -->
-<html lang="en" data-wf-page="653a0851eeafa91f0ed2edc0" data-wf-site="65019f3373747fcc31604fca">
+<html lang="en-AU" data-wf-page="653a0851eeafa91f0ed2edc0" data-wf-site="65019f3373747fcc31604fca">
 <head>
   <meta charset="utf-8">
   <title>Privacy Policy | Daynamic</title>
@@ -22,6 +22,7 @@
   <link href="css/normalize.css" rel="stylesheet" type="text/css">
   <link href="css/webflow.css" rel="stylesheet" type="text/css">
   <link href="css/daynamic.webflow.css" rel="stylesheet" type="text/css">
+  <link href="css/site.css" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin="anonymous">
   <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript"></script>
@@ -60,9 +61,19 @@
 <body class="body">
   <div class="container">
     <div class="header">
-      <div class="header-wrapper">
+      <div class="topbar">
+        <div class="topbar-inner">
+          <span class="topbar-tagline">Commercial cleaning across Melbourne</span>
+          <div class="topbar-links">
+            <a href="tel:+61450126979">+61 450 126 979</a>
+            <a href="https://www.linkedin.com/company/daynamic-cleaning/" target="_blank" rel="noopener">LinkedIn</a>
+            <a href="https://www.instagram.com/daynamic.cleaning/" target="_blank" rel="noopener">Instagram</a>
+          </div>
+        </div>
+      </div>
+            <div class="header-wrapper">
         <div class="column justify-left">
-          <a href="index.html" class="logo-block w-inline-block"><img src="images/Daynamic_Main_Logo.png" loading="lazy" width="50" alt="Daynamic Cleaning Services Green Logo" class="main-logo">
+          <a href="/" class="logo-block w-inline-block"><img src="images/Daynamic_Main_Logo.png" loading="lazy" width="50" alt="Daynamic Cleaning Services Green Logo" class="main-logo">
             <div class="company-name mobile-hidden">
               <div class="business-name">DAYNAMIC</div>
               <div class="services-title">Commercial Cleaning </div>
@@ -73,32 +84,38 @@
           <div class="column-wrapper">
             <div class="menu-wrapper mobile-hidden">
               <div class="menu-block">
-                <a href="index.html" class="menu-link">Home</a>
+                <a href="/" class="menu-link">Home</a>
+                <div class="menu-selection"></div>
+              </div>
+              <div class="menu-block has-dropdown">
+                <a href="/services" class="menu-link">Services</a>
+                <div class="menu-dropdown">
+                  <a href="/office-cleaning-melbourne">Office &amp; Commercial Cleaning</a>
+                  <a href="/strata-cleaning-melbourne">Strata &amp; Owner Corporation Cleaning</a>
+                  <a href="/hotel-apartment-cleaning-melbourne">Hotel &amp; Serviced Apartment Cleaning</a>
+                  <a href="/services">All services</a>
+                </div>
                 <div class="menu-selection"></div>
               </div>
               <div class="menu-block">
-                <a href="services.html" class="menu-link">Services</a>
+                <a href="/about" class="menu-link">About</a>
                 <div class="menu-selection"></div>
               </div>
               <div class="menu-block">
-                <a href="about.html" class="menu-link">About</a>
+                <a href="/blog" class="menu-link">Blog</a>
                 <div class="menu-selection"></div>
               </div>
               <div class="menu-block">
-                <a href="blog.html" class="menu-link">Blog</a>
-                <div class="menu-selection"></div>
-              </div>
-              <div class="menu-block">
-                <a href="faq.html" class="menu-link">FAQ</a>
+                <a href="/faq" class="menu-link">FAQ</a>
                 <div class="menu-selection"></div>
               </div>
             </div>
             <div class="button-wrapper">
-              <a href="tel:+610450126979" class="button-block white-button mobile-hidden w-inline-block">
+              <a href="tel:+61450126979" class="button-block white-button mobile-hidden w-inline-block">
                 <div class="button-icon"><img src="images/phone-call-svgrepo-com.svg" loading="lazy" alt="Green phone call icon" height="20"></div>
                 <div class="button-text">+61 450 126 979</div>
               </a>
-              <a href="quote.html" class="button-block mobile-hidden w-inline-block">
+              <a href="/quote" class="button-block mobile-hidden w-inline-block">
                 <div class="button-text">Get a Quote</div>
               </a>
               <a data-w-id="5bd28f64-a9b8-5e9e-e253-5881bdd9a3cb" href="#" class="burger-block desktop-hidden w-inline-block">
@@ -116,7 +133,7 @@
     <div class="sections">
       <div class="main-banner">
         <div class="banner-wrapper">
-          <div class="banner-background"><img src="images/pexels-karolina-grabowska-4239146.jpg" loading="lazy" sizes="(max-width: 991px) 100vw, 1240px" srcset="images/pexels-karolina-grabowska-4239146-p-500.jpg 500w, images/pexels-karolina-grabowska-4239146-p-800.jpg 800w, images/pexels-karolina-grabowska-4239146-p-1080.jpg 1080w, images/pexels-karolina-grabowska-4239146-p-1600.jpg 1600w, images/pexels-karolina-grabowska-4239146-p-2000.jpg 2000w, images/pexels-karolina-grabowska-4239146-p-2600.jpg 2600w, images/pexels-karolina-grabowska-4239146-p-3200.jpg 3200w, images/pexels-karolina-grabowska-4239146.jpg 6412w" alt="Cleaning Mirror Sponge Clip Art" class="banner-image opacity"></div>
+          <div class="banner-background"><img src="images/pexels-karolina-grabowska-4239146.jpg" loading="eager" fetchpriority="high" sizes="(max-width: 991px) 100vw, 1240px" srcset="images/pexels-karolina-grabowska-4239146-p-500.jpg 500w, images/pexels-karolina-grabowska-4239146-p-800.jpg 800w, images/pexels-karolina-grabowska-4239146-p-1080.jpg 1080w, images/pexels-karolina-grabowska-4239146-p-1600.jpg 1600w, images/pexels-karolina-grabowska-4239146-p-2000.jpg 2000w, images/pexels-karolina-grabowska-4239146-p-2600.jpg 2600w, images/pexels-karolina-grabowska-4239146-p-3200.jpg 3200w, images/pexels-karolina-grabowska-4239146.jpg 6412w" alt="Cleaning Mirror Sponge Clip Art" class="banner-image opacity"></div>
           <div class="banner-block">
             <div class="column banner-column align-center">
               <div class="inner-banner no-bg">
@@ -125,7 +142,7 @@
                 </div>
                 <div class="description-block align-center">
                   <div class="button-wrapper button-banner">
-                    <a href="quote.html" class="button-block w-inline-block">
+                    <a href="/quote" class="button-block w-inline-block">
                       <div class="button-text">Get a Quote</div>
                     </a>
                   </div>
@@ -310,28 +327,40 @@
             <div class="row footer-row mobile-center">
               <div class="text-block bold footer-title">Company</div>
               <div class="service-description footer-elements mobile-center">
-                <a href="about.html" class="footer-links">About</a>
+                <a href="/about" class="footer-links">About</a>
               </div>
               <div class="service-description footer-elements mobile-center">
-                <a href="services.html" class="footer-links">Services</a>
+                <a href="/services" class="footer-links">Services</a>
               </div>
               <div class="service-description footer-elements mobile-center">
-                <a href="blog.html" class="footer-links">Blog</a>
+                <a href="/blog" class="footer-links">Blog</a>
               </div>
               <div class="service-description footer-elements mobile-center">
-                <a href="faq.html" class="footer-links">FAQ</a>
+                <a href="/faq" class="footer-links">FAQ</a>
               </div>
               <div class="service-description footer-elements mobile-center">
-                <a href="https://forms.gle/pRDb18m6yZHCyTaN6" class="footer-links">Contact</a>
+                <a href="/quote" class="footer-links">Contact</a>
+              </div>
+            </div>
+            <div class="row footer-row row-margin mobile-center">
+              <div class="text-block bold footer-title">Services</div>
+              <div class="service-description footer-elements mobile-center">
+                <a href="/office-cleaning-melbourne" class="footer-links">Office &amp; Commercial Cleaning</a>
+              </div>
+              <div class="service-description footer-elements mobile-center">
+                <a href="/strata-cleaning-melbourne" class="footer-links">Strata &amp; Owner Corporation Cleaning</a>
+              </div>
+              <div class="service-description footer-elements mobile-center">
+                <a href="/hotel-apartment-cleaning-melbourne" class="footer-links">Hotel &amp; Serviced Apartment Cleaning</a>
               </div>
             </div>
             <div class="row footer-row row-margin mobile-center">
               <div class="text-block bold footer-title">Legal</div>
               <div class="service-description footer-elements mobile-center">
-                <a href="privacy-policy.html" aria-current="page" class="footer-links w--current">Privacy Policy</a>
+                <a href="/privacy-policy" aria-current="page" class="footer-links w--current">Privacy Policy</a>
               </div>
               <div class="service-description footer-elements mobile-center">
-                <a href="terms-of-use.html" class="footer-links">Terms of Use</a>
+                <a href="/terms-of-use" class="footer-links">Terms of Use</a>
               </div>
             </div>
           </div>
@@ -339,15 +368,15 @@
             <div class="row footer-row align-right">
               <div class="text-block bold footer-title footer-social">Follow us:</div>
               <div class="service-description footer-elements align-right">
-                <a href="https://www.linkedin.com/company/daynamic-cleaning/" target="_blank" class="link-block w-inline-block"><img src="images/iconmonstr-linkedin-3.svg" loading="lazy" width="30" alt="Daynamic Cleaning black Linkedin logoi con"></a>
-                <a href="https://www.instagram.com/daynamic.cleaning/" target="_blank" class="link-block w-inline-block"><img src="images/black-instagram-icon.svg" loading="lazy" width="30" alt="Daynamic Cleaning black Instagram logoi con"></a>
+                <a href="https://www.linkedin.com/company/daynamic-cleaning/" target="_blank" class="link-block w-inline-block"><img src="images/iconmonstr-linkedin-3.svg" loading="lazy" width="30" alt="Daynamic on LinkedIn"></a>
+                <a href="https://www.instagram.com/daynamic.cleaning/" target="_blank" class="link-block w-inline-block"><img src="images/black-instagram-icon.svg" loading="lazy" width="30" alt="Daynamic on Instagram"></a>
               </div>
             </div>
           </div>
         </div>
         <div class="copyrights">
           <div class="inside-wrapper align-left copywriting-inside">
-            <div class="text-block bold footer-title copywriting-section"><strong>®DAYNAMIC 2023 ALL RIGHTS RESERVED</strong></div>
+            <div class="text-block bold footer-title copywriting-section"><strong>© 2026 DAYNAMIC. ALL RIGHTS RESERVED</strong></div>
           </div>
         </div>
       </div>
@@ -356,25 +385,30 @@
       <div class="display-menu">
         <div class="main-menu">
           <div class="menu-container">
-            <a href="index.html" class="menu-link burger-menu-title">Home</a>
-            <a href="services.html" class="menu-link burger-menu-title">Services</a>
-            <a href="about.html" class="menu-link burger-menu-title">About</a>
-            <a href="blog.html" class="menu-link burger-menu-title">Blog</a>
-            <a href="faq.html" class="menu-link burger-menu-title">FAQ</a>
-            <a href="quote.html" class="button-block burger-button w-inline-block">
+            <a href="/" class="menu-link burger-menu-title">Home</a>
+            <a href="/services" class="menu-link burger-menu-title">Services</a>
+            <div class="burger-sub-links">
+              <a href="/office-cleaning-melbourne">Office &amp; Commercial Cleaning</a>
+              <a href="/strata-cleaning-melbourne">Strata &amp; Owner Corporation Cleaning</a>
+              <a href="/hotel-apartment-cleaning-melbourne">Hotel &amp; Serviced Apartment Cleaning</a>
+            </div>
+            <a href="/about" class="menu-link burger-menu-title">About</a>
+            <a href="/blog" class="menu-link burger-menu-title">Blog</a>
+            <a href="/faq" class="menu-link burger-menu-title">FAQ</a>
+            <a href="/quote" class="button-block burger-button w-inline-block">
               <div class="button-text">Get a Quote</div>
             </a>
           </div>
         </div>
         <div class="secundary-menu">
           <div class="menu-container">
-            <a href="privacy-policy.html" aria-current="page" class="menu-link burger-menu-title w--current">Privacy Policy</a>
-            <a href="terms-of-use.html" class="menu-link burger-menu-title">Terms &amp; Conditions</a>
+            <a href="/privacy-policy" aria-current="page" class="menu-link burger-menu-title w--current">Privacy Policy</a>
+            <a href="/terms-of-use" class="menu-link burger-menu-title">Terms &amp; Conditions</a>
             <div class="row footer-row align-right social-burger">
               <div class="text-block bold footer-title footer-social burger-social">Follow us:</div>
               <div class="service-description footer-elements align-right burger-social">
-                <a href="#" class="link-block burger-social-icons w-inline-block"><img src="images/iconmonstr-linkedin-3.svg" loading="lazy" width="30" alt="Daynamic Cleaning black Linkedin logoi con"></a>
-                <a href="#" class="link-block burger-social-icons w-inline-block"><img src="images/black-instagram-icon.svg" loading="lazy" width="30" alt="Daynamic Cleaning black Instagram logoi con"></a>
+                <a href="https://www.linkedin.com/company/daynamic-cleaning/" target="_blank" rel="noopener" class="link-block burger-social-icons w-inline-block"><img src="images/iconmonstr-linkedin-3.svg" loading="lazy" width="30" alt="Daynamic on LinkedIn"></a>
+                <a href="https://www.instagram.com/daynamic.cleaning/" target="_blank" rel="noopener" class="link-block burger-social-icons w-inline-block"><img src="images/black-instagram-icon.svg" loading="lazy" width="30" alt="Daynamic on Instagram"></a>
               </div>
             </div>
           </div>
