@@ -1,0 +1,326 @@
+/* Site-wide additions layered on top of the Webflow export. */
+
+:root {
+  --dn-green: #44b303;
+  --dn-green-dark: #3a9a02;
+  --dn-ink: #1f1f1f;
+  --dn-muted: #555;
+  --dn-soft: #f4f8f8;
+  --dn-topbar-h: 34px;
+}
+
+/* ---------- Top bar ---------- */
+.topbar {
+  background-color: var(--dn-ink);
+  color: #fff;
+  font-family: Lato, sans-serif;
+  font-size: 13px;
+}
+.topbar-inner {
+  max-width: 1240px;
+  height: var(--dn-topbar-h);
+  margin: 0 auto;
+  padding: 0 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+.topbar a {
+  color: #fff;
+  text-decoration: none;
+}
+.topbar a:hover { color: var(--dn-green); }
+.topbar-links {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+.sections { margin-top: calc(91px + var(--dn-topbar-h)); }
+
+/* ---------- Services dropdown (desktop) ---------- */
+.menu-block.has-dropdown { position: relative; }
+.menu-block.has-dropdown > .menu-link::after {
+  content: "";
+  display: inline-block;
+  margin-left: 6px;
+  border: 4px solid transparent;
+  border-top-color: currentColor;
+  border-bottom: 0;
+  vertical-align: middle;
+}
+.menu-dropdown {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  min-width: 260px;
+  padding: 10px 0;
+  margin-top: 12px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, .12);
+  display: none;
+  z-index: 1100;
+}
+.menu-dropdown::before {
+  /* hover bridge between link and panel */
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -14px;
+  height: 14px;
+}
+.menu-block.has-dropdown:hover .menu-dropdown,
+.menu-block.has-dropdown:focus-within .menu-dropdown { display: block; }
+.menu-dropdown a {
+  display: block;
+  padding: 9px 20px;
+  color: var(--dn-ink);
+  font-family: Lato, sans-serif;
+  font-size: 15px;
+  text-decoration: none;
+  white-space: nowrap;
+}
+.menu-dropdown a:hover { background: var(--dn-soft); color: var(--dn-green); }
+
+/* ---------- Mobile menu sub-links ---------- */
+.burger-sub-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.burger-sub-links a {
+  color: var(--dn-muted);
+  font-family: Lato, sans-serif;
+  font-size: 15px;
+  text-decoration: none;
+  padding: 4px 0;
+}
+
+/* ---------- Service-area strip under the hero ---------- */
+.areas-strip {
+  max-width: 1100px;
+  margin: 30px auto 0;
+  padding: 0 30px;
+}
+.areas-strip-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding: 20px 28px;
+  background: var(--dn-soft);
+  border-radius: 10px;
+  font-family: Lato, sans-serif;
+}
+.areas-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 22px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+}
+.areas-list li::before {
+  content: "";
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  margin-right: 8px;
+  border-radius: 50%;
+  background: var(--dn-green);
+}
+.areas-actions {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+.areas-actions .phone-link {
+  color: var(--dn-ink);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+/* ---------- Shared button (outside Webflow interactions) ---------- */
+.dn-button {
+  display: inline-block;
+  padding: 12px 22px;
+  border-radius: 5px;
+  background: var(--dn-green);
+  color: #fff;
+  font-family: Lato, sans-serif;
+  font-weight: 700;
+  text-decoration: none;
+}
+.dn-button:hover { background: var(--dn-green-dark); }
+.dn-button.dark { background: #333; }
+
+/* ---------- Call-to-action band ---------- */
+.cta-band {
+  margin: 60px auto 0;
+  padding: 50px 30px;
+  background: var(--dn-soft);
+  text-align: center;
+  font-family: Lato, sans-serif;
+}
+.cta-band h2 {
+  margin: 0 0 10px;
+  font-size: 30px;
+  line-height: 1.25;
+}
+.cta-band p {
+  margin: 0 auto 22px;
+  max-width: 560px;
+  color: var(--dn-muted);
+  font-size: 16px;
+  line-height: 1.5;
+}
+.cta-band .cta-actions {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.cta-band + .newsletter-banner { margin-top: 40px; }
+
+/* ---------- Service landing pages ---------- */
+.service-page {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 50px 30px 0;
+  font-family: Lato, sans-serif;
+  color: var(--dn-ink);
+}
+.breadcrumbs {
+  margin: 0 0 24px;
+  font-size: 13px;
+  color: var(--dn-muted);
+}
+.breadcrumbs a { color: var(--dn-muted); }
+.service-intro {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 40px;
+  align-items: center;
+}
+.service-intro img {
+  width: 100%;
+  height: 100%;
+  max-height: 380px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.service-page h2 {
+  margin: 0 0 14px;
+  font-size: 28px;
+  line-height: 1.25;
+}
+.service-page p {
+  margin: 0 0 14px;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+}
+.service-block { margin-top: 50px; }
+.check-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  gap: 12px 24px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.check-grid li {
+  position: relative;
+  padding-left: 30px;
+  font-size: 15px;
+  line-height: 22px;
+}
+.check-grid li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 1px;
+  width: 20px;
+  height: 20px;
+  background: url("../images/check-mark-circle-2-svgrepo-com.svg") center / contain no-repeat;
+}
+.why-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 18px;
+}
+.why-card {
+  padding: 22px;
+  border-radius: 10px;
+  background: var(--dn-soft);
+}
+.why-card h3 {
+  margin: 0 0 8px;
+  font-size: 17px;
+}
+.why-card p {
+  margin: 0;
+  font-size: 15px;
+  color: var(--dn-muted);
+}
+.faq-list details {
+  border-bottom: 1px solid #e3e3e3;
+  padding: 16px 0;
+}
+.faq-list summary {
+  cursor: pointer;
+  font-size: 17px;
+  font-weight: 700;
+}
+.faq-list details p { margin: 10px 0 0; }
+.related-services {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+.related-services a {
+  padding: 10px 16px;
+  border: 1.5px solid var(--dn-green);
+  border-radius: 5px;
+  color: var(--dn-ink);
+  text-decoration: none;
+  font-weight: 700;
+}
+.related-services a:hover { background: var(--dn-green); color: #fff; }
+.service-learn-more {
+  display: inline-block;
+  margin-top: 12px;
+  color: var(--dn-green);
+  font-family: Lato, sans-serif;
+  font-weight: 700;
+}
+
+@media screen and (max-width: 991px) {
+  .sections { margin-top: calc(79px + var(--dn-topbar-h)); }
+  .service-intro { grid-template-columns: 1fr; }
+}
+
+@media screen and (max-width: 767px) {
+  .topbar-tagline { display: none; }
+  .topbar-inner { justify-content: center; padding: 0 15px; }
+  .sections { margin-top: calc(78px + var(--dn-topbar-h)); }
+  .areas-strip { padding: 0 15px; }
+  .areas-strip-inner { justify-content: center; text-align: center; }
+  .areas-list { justify-content: center; }
+  .service-page { padding: 35px 15px 0; }
+  .cta-band h2 { font-size: 24px; }
+}
+
+@media screen and (max-width: 479px) {
+  .sections { margin-top: calc(62px + var(--dn-topbar-h)); }
+}
