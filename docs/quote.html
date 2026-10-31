@@ -1,5 +1,5 @@
 <!DOCTYPE html><!--  Last Published: Thu Apr 04 2024 22:42:00 GMT+0000 (Coordinated Universal Time)  -->
-<html lang="en" data-wf-page="65019f3373747fcc31604fcf" data-wf-site="65019f3373747fcc31604fca">
+<html lang="en-AU" data-wf-page="65019f3373747fcc31604fcf" data-wf-site="65019f3373747fcc31604fca">
 <head>
   <meta charset="utf-8">
   <title>Get a Free Quote | Daynamic Commercial Cleaning Melbourne</title>
@@ -22,6 +22,7 @@
   <link href="css/normalize.css" rel="stylesheet" type="text/css">
   <link href="css/webflow.css" rel="stylesheet" type="text/css">
   <link href="css/daynamic.webflow.css" rel="stylesheet" type="text/css">
+  <link href="css/site.css" rel="stylesheet" type="text/css">
   <link href="css/quote-form.css" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin="anonymous">
@@ -64,25 +65,30 @@
       <div class="display-menu">
         <div class="main-menu">
           <div class="menu-container">
-            <a href="index.html" class="menu-link burger-menu-title">Home</a>
-            <a href="services.html" class="menu-link burger-menu-title">Services</a>
-            <a href="about.html" class="menu-link burger-menu-title">About</a>
-            <a href="blog.html" class="menu-link burger-menu-title">Blog</a>
-            <a href="faq.html" class="menu-link burger-menu-title">FAQ</a>
-            <a href="quote.html" aria-current="page" class="button-block burger-button w-inline-block w--current">
+            <a href="/" class="menu-link burger-menu-title">Home</a>
+            <a href="/services" class="menu-link burger-menu-title">Services</a>
+            <div class="burger-sub-links">
+              <a href="/office-cleaning-melbourne">Office &amp; Commercial Cleaning</a>
+              <a href="/strata-cleaning-melbourne">Strata &amp; Owner Corporation Cleaning</a>
+              <a href="/hotel-apartment-cleaning-melbourne">Hotel &amp; Serviced Apartment Cleaning</a>
+            </div>
+            <a href="/about" class="menu-link burger-menu-title">About</a>
+            <a href="/blog" class="menu-link burger-menu-title">Blog</a>
+            <a href="/faq" class="menu-link burger-menu-title">FAQ</a>
+            <a href="/quote" aria-current="page" class="button-block burger-button w-inline-block w--current">
               <div class="button-text">Get a Quote</div>
             </a>
           </div>
         </div>
         <div class="secundary-menu">
           <div class="menu-container">
-            <a href="privacy-policy.html" class="menu-link burger-menu-title">Privacy Policy</a>
-            <a href="terms-of-use.html" class="menu-link burger-menu-title">Terms &amp; Conditions</a>
+            <a href="/privacy-policy" class="menu-link burger-menu-title">Privacy Policy</a>
+            <a href="/terms-of-use" class="menu-link burger-menu-title">Terms &amp; Conditions</a>
             <div class="row footer-row align-right social-burger">
               <div class="text-block bold footer-title footer-social burger-social">Follow us:</div>
               <div class="service-description footer-elements align-right burger-social">
-                <a href="#" class="link-block burger-social-icons w-inline-block"><img src="images/iconmonstr-linkedin-3.svg" loading="lazy" width="30" alt="Daynamic Cleaning black Linkedin logoi con"></a>
-                <a href="#" class="link-block burger-social-icons w-inline-block"><img src="images/black-instagram-icon.svg" loading="lazy" width="30" alt="Daynamic Cleaning black Instagram logoi con"></a>
+                <a href="https://www.linkedin.com/company/daynamic-cleaning/" target="_blank" rel="noopener" class="link-block burger-social-icons w-inline-block"><img src="images/iconmonstr-linkedin-3.svg" loading="lazy" width="30" alt="Daynamic on LinkedIn"></a>
+                <a href="https://www.instagram.com/daynamic.cleaning/" target="_blank" rel="noopener" class="link-block burger-social-icons w-inline-block"><img src="images/black-instagram-icon.svg" loading="lazy" width="30" alt="Daynamic on Instagram"></a>
               </div>
             </div>
           </div>
@@ -90,9 +96,19 @@
       </div>
     </div>
     <div class="header">
-      <div class="header-wrapper">
+      <div class="topbar">
+        <div class="topbar-inner">
+          <span class="topbar-tagline">Commercial cleaning across Melbourne</span>
+          <div class="topbar-links">
+            <a href="tel:+61450126979">+61 450 126 979</a>
+            <a href="https://www.linkedin.com/company/daynamic-cleaning/" target="_blank" rel="noopener">LinkedIn</a>
+            <a href="https://www.instagram.com/daynamic.cleaning/" target="_blank" rel="noopener">Instagram</a>
+          </div>
+        </div>
+      </div>
+            <div class="header-wrapper">
         <div class="column justify-left">
-          <a href="index.html" class="logo-block w-inline-block"><img src="images/Daynamic_Main_Logo.png" loading="lazy" width="50" alt="Daynamic Cleaning Services Green Logo" class="main-logo">
+          <a href="/" class="logo-block w-inline-block"><img src="images/Daynamic_Main_Logo.png" loading="lazy" width="50" alt="Daynamic Cleaning Services Green Logo" class="main-logo">
             <div class="company-name mobile-hidden">
               <div class="business-name">DAYNAMIC</div>
               <div class="services-title">Commercial Cleaning </div>
@@ -103,32 +119,38 @@
           <div class="column-wrapper">
             <div class="menu-wrapper mobile-hidden">
               <div class="menu-block">
-                <a href="index.html" class="menu-link">Home</a>
+                <a href="/" class="menu-link">Home</a>
+                <div class="menu-selection"></div>
+              </div>
+              <div class="menu-block has-dropdown">
+                <a href="/services" class="menu-link">Services</a>
+                <div class="menu-dropdown">
+                  <a href="/office-cleaning-melbourne">Office &amp; Commercial Cleaning</a>
+                  <a href="/strata-cleaning-melbourne">Strata &amp; Owner Corporation Cleaning</a>
+                  <a href="/hotel-apartment-cleaning-melbourne">Hotel &amp; Serviced Apartment Cleaning</a>
+                  <a href="/services">All services</a>
+                </div>
                 <div class="menu-selection"></div>
               </div>
               <div class="menu-block">
-                <a href="services.html" class="menu-link">Services</a>
+                <a href="/about" class="menu-link">About</a>
                 <div class="menu-selection"></div>
               </div>
               <div class="menu-block">
-                <a href="about.html" class="menu-link">About</a>
+                <a href="/blog" class="menu-link">Blog</a>
                 <div class="menu-selection"></div>
               </div>
               <div class="menu-block">
-                <a href="blog.html" class="menu-link">Blog</a>
-                <div class="menu-selection"></div>
-              </div>
-              <div class="menu-block">
-                <a href="faq.html" class="menu-link">FAQ</a>
+                <a href="/faq" class="menu-link">FAQ</a>
                 <div class="menu-selection"></div>
               </div>
             </div>
             <div class="button-wrapper">
-              <a href="tel:+610450126979" class="button-block white-button mobile-hidden w-inline-block">
+              <a href="tel:+61450126979" class="button-block white-button mobile-hidden w-inline-block">
                 <div class="button-icon"><img src="images/phone-call-svgrepo-com.svg" loading="lazy" alt="Green phone call icon" height="20"></div>
                 <div class="button-text">+61 450 126 979</div>
               </a>
-              <a href="quote.html" aria-current="page" class="button-block mobile-hidden w-inline-block w--current">
+              <a href="/quote" aria-current="page" class="button-block mobile-hidden w-inline-block w--current">
                 <div class="button-text">Get a Quote</div>
               </a>
               <a data-w-id="3b5bd408-a4ef-2033-fe6c-67615032434f" href="#" class="burger-block desktop-hidden w-inline-block">
@@ -146,15 +168,12 @@
     <div class="sections">
       <div class="main-banner">
         <div class="banner-wrapper">
-          <div class="banner-background"><img src="images/pexels-karolina-grabowska-4239031.jpg" loading="lazy" sizes="(max-width: 991px) 100vw, 1240px" srcset="images/pexels-karolina-grabowska-4239031-p-500.jpg 500w, images/pexels-karolina-grabowska-4239031-p-800.jpg 800w, images/pexels-karolina-grabowska-4239031-p-1080.jpg 1080w, images/pexels-karolina-grabowska-4239031-p-1600.jpg 1600w, images/pexels-karolina-grabowska-4239031-p-2000.jpg 2000w, images/pexels-karolina-grabowska-4239031-p-2600.jpg 2600w, images/pexels-karolina-grabowska-4239031-p-3200.jpg 3200w, images/pexels-karolina-grabowska-4239031.jpg 6692w" alt="Cleaning Mirror Clip Art" class="banner-image opacity"></div>
+          <div class="banner-background"><img src="images/pexels-karolina-grabowska-4239031.jpg" loading="eager" fetchpriority="high" sizes="(max-width: 991px) 100vw, 1240px" srcset="images/pexels-karolina-grabowska-4239031-p-500.jpg 500w, images/pexels-karolina-grabowska-4239031-p-800.jpg 800w, images/pexels-karolina-grabowska-4239031-p-1080.jpg 1080w, images/pexels-karolina-grabowska-4239031-p-1600.jpg 1600w, images/pexels-karolina-grabowska-4239031-p-2000.jpg 2000w, images/pexels-karolina-grabowska-4239031-p-2600.jpg 2600w, images/pexels-karolina-grabowska-4239031-p-3200.jpg 3200w, images/pexels-karolina-grabowska-4239031.jpg 6692w" alt="Cleaning Mirror Clip Art" class="banner-image opacity"></div>
           <div class="banner-block">
             <div class="column banner-column align-center">
               <div class="inner-banner no-bg">
                 <div class="title-block white-block">
-                  <h1 class="heading align-center title-padding">Get A Proposal</h1>
-                </div>
-                <div class="description-block align-center">
-                  <div class="text-description sub-title white-color">Help us get to know a little about your cleaning needs.</div>
+                  <h1 class="heading align-center title-padding">Get a Commercial Cleaning Proposal</h1>
                 </div>
               </div>
             </div>
@@ -162,111 +181,239 @@
         </div>
       </div>
       <div class="quote-page-section">
-        <div class="quote-page-wrapper">
-          <p class="quote-form-title">Office Cleaning Proposal</p>
-          <p class="quote-form-intro">Thank you for considering our professional commercial cleaning services. To ensure that we provide you with a detailed and accurate quotation, we kindly request some essential information about your cleaning needs.</p>
-          <form id="quote-form" novalidate>
-            <div class="quote-field">
-              <label for="quote-office-size">How many people work in your office? <span class="required-mark">*</span></label>
-              <select id="quote-office-size" name="entry.321025305" data-required data-other-toggle>
-                <option value="" selected disabled>Please Select</option>
-                <option value="Less than 10 people or Less than 10 apartments">Less than 10 people or Less than 10 apartments</option>
-                <option value="10 - 50 Apartments or people">10 - 50 Apartments or people</option>
-                <option value="50-100 Apartments or people">50-100 Apartments or people</option>
-                <option value="100-200 Apartments or people">100-200 Apartments or people</option>
-                <option value="__other_option__">Other</option>
-              </select>
-              <input type="text" class="quote-other-input" name="entry.321025305.other_option_response" data-other-input placeholder="Please specify" hidden>
-              <div class="quote-field-error">This field is required.</div>
-            </div>
+        <div class="quote-layout">
+          <div class="quote-page-wrapper">
+            <p class="quote-form-title">Request a cleaning proposal</p>
+            <p class="quote-form-intro">Tell us about your site in three quick steps. We&rsquo;ll prepare a tailored proposal and, if you like, book a free on-site assessment or a call at a time that suits you.</p>
 
-            <div class="quote-field">
-              <label for="quote-has-contractor">Do you currently have a cleaning contractor? <span class="required-mark">*</span></label>
-              <select id="quote-has-contractor" name="entry.2068040619" data-required data-other-toggle>
-                <option value="" selected disabled>Please Select</option>
-                <option value="Yes">Yes</option>
-                <option value="No">No</option>
-                <option value="__other_option__">Other</option>
-              </select>
-              <input type="text" class="quote-other-input" name="entry.2068040619.other_option_response" data-other-input placeholder="Please specify" hidden>
-              <div class="quote-field-error">This field is required.</div>
-            </div>
+            <ol class="quote-steps" aria-label="Form progress">
+              <li class="is-active" data-step-indicator="1"><span>1</span> Your site</li>
+              <li data-step-indicator="2"><span>2</span> Your details</li>
+              <li data-step-indicator="3"><span>3</span> Book &amp; send</li>
+            </ol>
 
-            <div class="quote-field">
-              <label>If yes, on a scale of 1 - 5, how satisfied are you with your current contractor? <span class="required-mark">*</span></label>
-              <div class="quote-radio-group" role="radiogroup" aria-label="Satisfaction scale">
-                <label class="quote-radio-option"><input type="radio" name="entry.1794910299" value="1" data-required>1</label>
-                <label class="quote-radio-option"><input type="radio" name="entry.1794910299" value="2">2</label>
-                <label class="quote-radio-option"><input type="radio" name="entry.1794910299" value="3">3</label>
-                <label class="quote-radio-option"><input type="radio" name="entry.1794910299" value="4">4</label>
-                <label class="quote-radio-option"><input type="radio" name="entry.1794910299" value="5">5</label>
-              </div>
-            </div>
+            <form id="quote-form" novalidate>
+              <fieldset class="quote-step" data-step="1">
+                <legend class="quote-step-title">What do you need cleaned?</legend>
 
-            <div class="quote-field">
-              <label for="quote-frequency">How frequently do you need our cleaning services? <span class="required-mark">*</span></label>
-              <select id="quote-frequency" name="entry.1410455332" data-required data-other-toggle>
-                <option value="" selected disabled>Please Select</option>
-                <option value="Daily">Daily</option>
-                <option value="Every Other day">Every Other day</option>
-                <option value="Weekly">Weekly</option>
-                <option value="No Yet Decided">Not Yet Decided</option>
-                <option value="__other_option__">Other</option>
-              </select>
-              <input type="text" class="quote-other-input" name="entry.1410455332.other_option_response" data-other-input placeholder="Please specify" hidden>
-              <div class="quote-field-error">This field is required.</div>
-            </div>
+                <div class="quote-field">
+                  <span class="quote-label" id="service-label">Type of service <span class="required-mark">*</span></span>
+                  <div class="quote-cards" role="radiogroup" aria-labelledby="service-label">
+                    <label class="quote-card"><input type="radio" name="service" value="Office &amp; Commercial Cleaning" data-required><span>Office &amp; Commercial</span></label>
+                    <label class="quote-card"><input type="radio" name="service" value="Strata &amp; Owner Corporation Cleaning"><span>Strata &amp; Owner Corporation</span></label>
+                    <label class="quote-card"><input type="radio" name="service" value="Hotel &amp; Serviced Apartment Cleaning"><span>Hotel &amp; Serviced Apartments</span></label>
+                    <label class="quote-card"><input type="radio" name="service" value="Other"><span>Other</span></label>
+                  </div>
+                  <div class="quote-field-error">Please choose a service.</div>
+                </div>
 
-            <div class="quote-field">
-              <label for="quote-time">What is your preferred time for cleaning? <span class="required-mark">*</span></label>
-              <select id="quote-time" name="entry.830103564" data-required data-other-toggle>
-                <option value="" selected disabled>Please Select</option>
-                <option value="Early Morning (Non-Business hours)">Early Morning (Non-Business hours)</option>
-                <option value="Daytime (Business hours)">Daytime (Business hours)</option>
-                <option value="Evening (Non-Business hours)">Evening (Non-Business hours)</option>
-                <option value="Late Night (Non-Business hours)">Late Night (Non-Business hours)</option>
-                <option value="Unsure">Unsure</option>
-                <option value="__other_option__">Other</option>
-              </select>
-              <input type="text" class="quote-other-input" name="entry.830103564.other_option_response" data-other-input placeholder="Please specify" hidden>
-              <div class="quote-field-error">This field is required.</div>
-            </div>
+                <div class="quote-field">
+                  <label for="quote-size">Size of the site <span class="required-mark">*</span></label>
+                  <select id="quote-size" name="size" data-required>
+                    <option value="" selected disabled>Please select</option>
+                    <option value="Less than 10 people or Less than 10 apartments">Fewer than 10 people / apartments</option>
+                    <option value="10 - 50 Apartments or people">10 &ndash; 50 people / apartments</option>
+                    <option value="50-100 Apartments or people">50 &ndash; 100 people / apartments</option>
+                    <option value="100-200 Apartments or people">100 &ndash; 200 people / apartments</option>
+                    <option value="__other_option__">More than 200 / other</option>
+                  </select>
+                  <input type="text" class="quote-other-input" name="size_other" data-other-for="quote-size" placeholder="Please specify (e.g. 1,500 m², 3 floors)" hidden>
+                  <div class="quote-field-error">This field is required.</div>
+                </div>
 
-            <div class="quote-field">
-              <label for="quote-org">What is the name of your organisation?</label>
-              <input type="text" id="quote-org" name="entry.1626353113">
-            </div>
+                <div class="quote-row">
+                  <div class="quote-field">
+                    <label for="quote-frequency">How often? <span class="required-mark">*</span></label>
+                    <select id="quote-frequency" name="frequency" data-required>
+                      <option value="" selected disabled>Please select</option>
+                      <option value="Daily">Daily</option>
+                      <option value="Every Other day">Every other day</option>
+                      <option value="Weekly">Weekly</option>
+                      <option value="__other_option__">Fortnightly / one-off / other</option>
+                      <option value="No Yet Decided">Not decided yet</option>
+                    </select>
+                    <input type="text" class="quote-other-input" name="frequency_other" data-other-for="quote-frequency" placeholder="Please specify" hidden>
+                    <div class="quote-field-error">This field is required.</div>
+                  </div>
+                  <div class="quote-field">
+                    <label for="quote-time">Preferred cleaning time <span class="required-mark">*</span></label>
+                    <select id="quote-time" name="time" data-required>
+                      <option value="" selected disabled>Please select</option>
+                      <option value="Early Morning (Non-Business hours)">Early morning (before hours)</option>
+                      <option value="Daytime (Business hours)">Daytime (business hours)</option>
+                      <option value="Evening (Non-Business hours)">Evening (after hours)</option>
+                      <option value="Late Night (Non-Business hours)">Late night</option>
+                      <option value="Unsure">Not sure yet</option>
+                    </select>
+                    <div class="quote-field-error">This field is required.</div>
+                  </div>
+                </div>
 
-            <div class="quote-field">
-              <label for="quote-postcode">Postal code <span class="required-mark">*</span></label>
-              <input type="text" id="quote-postcode" name="entry.1100649475" data-required>
-              <div class="quote-field-error">This field is required.</div>
-            </div>
+                <div class="quote-field">
+                  <span class="quote-label" id="contractor-label">Do you currently have a cleaning contractor? <span class="required-mark">*</span></span>
+                  <div class="quote-radio-group" role="radiogroup" aria-labelledby="contractor-label">
+                    <label class="quote-radio-option"><input type="radio" name="contractor" value="Yes" data-required>Yes</label>
+                    <label class="quote-radio-option"><input type="radio" name="contractor" value="No">No</label>
+                  </div>
+                  <div class="quote-field-error">Please choose an option.</div>
+                </div>
 
-            <div class="quote-field">
-              <label for="quote-first-name">First name <span class="required-mark">*</span></label>
-              <input type="text" id="quote-first-name" name="entry.1578862867" data-required>
-              <div class="quote-field-error">This field is required.</div>
-            </div>
+                <div class="quote-field" data-show-if="contractor=Yes" hidden>
+                  <span class="quote-label" id="satisfaction-label">How satisfied are you with them? (1 = not at all, 5 = very) <span class="required-mark">*</span></span>
+                  <div class="quote-radio-group" role="radiogroup" aria-labelledby="satisfaction-label">
+                    <label class="quote-radio-option"><input type="radio" name="satisfaction" value="1" data-required>1</label>
+                    <label class="quote-radio-option"><input type="radio" name="satisfaction" value="2">2</label>
+                    <label class="quote-radio-option"><input type="radio" name="satisfaction" value="3">3</label>
+                    <label class="quote-radio-option"><input type="radio" name="satisfaction" value="4">4</label>
+                    <label class="quote-radio-option"><input type="radio" name="satisfaction" value="5">5</label>
+                  </div>
+                  <div class="quote-field-error">Please choose a rating.</div>
+                </div>
 
-            <div class="quote-field">
-              <label for="quote-last-name">Last name <span class="required-mark">*</span></label>
-              <input type="text" id="quote-last-name" name="entry.1087260842" data-required>
-              <div class="quote-field-error">This field is required.</div>
-            </div>
+                <div class="quote-nav">
+                  <button type="button" class="quote-submit-button" data-next>Continue</button>
+                </div>
+              </fieldset>
 
-            <div class="quote-field">
-              <label for="quote-phone">Phone number <span class="required-mark">*</span></label>
-              <input type="tel" id="quote-phone" name="entry.968009634" data-required>
-              <input type="hidden" name="entry.1144709086">
-              <div class="quote-field-error">This field is required.</div>
-            </div>
+              <fieldset class="quote-step" data-step="2" hidden>
+                <legend class="quote-step-title">How can we reach you?</legend>
 
-            <div class="quote-submit-row">
-              <button type="submit" class="quote-submit-button">Submit</button>
+                <div class="quote-row">
+                  <div class="quote-field">
+                    <label for="quote-first-name">First name <span class="required-mark">*</span></label>
+                    <input type="text" id="quote-first-name" name="first_name" autocomplete="given-name" data-required>
+                    <div class="quote-field-error">This field is required.</div>
+                  </div>
+                  <div class="quote-field">
+                    <label for="quote-last-name">Last name <span class="required-mark">*</span></label>
+                    <input type="text" id="quote-last-name" name="last_name" autocomplete="family-name" data-required>
+                    <div class="quote-field-error">This field is required.</div>
+                  </div>
+                </div>
+
+                <div class="quote-field">
+                  <label for="quote-org">Organisation / building name</label>
+                  <input type="text" id="quote-org" name="organisation" autocomplete="organization">
+                </div>
+
+                <div class="quote-row">
+                  <div class="quote-field">
+                    <label for="quote-email">Email <span class="required-mark">*</span></label>
+                    <input type="email" id="quote-email" name="email" autocomplete="email" data-required data-validate="email">
+                    <div class="quote-field-error">Please enter a valid email address.</div>
+                  </div>
+                  <div class="quote-field">
+                    <label for="quote-phone">Phone <span class="required-mark">*</span></label>
+                    <input type="tel" id="quote-phone" name="phone" autocomplete="tel" placeholder="04xx xxx xxx" data-required data-validate="phone-au">
+                    <div class="quote-field-error">Please enter a valid Australian phone number.</div>
+                  </div>
+                </div>
+
+                <div class="quote-row">
+                  <div class="quote-field">
+                    <label for="quote-postcode">Site postcode <span class="required-mark">*</span></label>
+                    <input type="text" id="quote-postcode" name="postcode" inputmode="numeric" maxlength="4" autocomplete="postal-code" data-required data-validate="postcode-au">
+                    <div class="quote-field-error">Please enter a 4-digit postcode.</div>
+                  </div>
+                  <div class="quote-field">
+                    <label for="quote-contact-method">Best way to contact you</label>
+                    <select id="quote-contact-method" name="contact_method">
+                      <option value="Phone call" selected>Phone call</option>
+                      <option value="Email">Email</option>
+                      <option value="SMS">SMS</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="quote-nav">
+                  <button type="button" class="quote-back-button" data-back>Back</button>
+                  <button type="button" class="quote-submit-button" data-next>Continue</button>
+                </div>
+              </fieldset>
+
+              <fieldset class="quote-step" data-step="3" hidden>
+                <legend class="quote-step-title">What would you like to do next?</legend>
+
+                <div class="quote-field">
+                  <div class="quote-cards quote-cards-stacked" role="radiogroup" aria-label="Next step">
+                    <label class="quote-card"><input type="radio" name="next_step" value="Book a free on-site assessment" checked><span><strong>Book a free on-site assessment</strong><small>We visit your site to scope the clean accurately.</small></span></label>
+                    <label class="quote-card"><input type="radio" name="next_step" value="Book a 15-minute phone call"><span><strong>Book a 15-minute call</strong><small>Talk through your needs with our team.</small></span></label>
+                    <label class="quote-card"><input type="radio" name="next_step" value="Just send me a proposal"><span><strong>Just send me a proposal</strong><small>We&rsquo;ll email a quote based on your answers.</small></span></label>
+                  </div>
+                </div>
+
+                <div class="quote-row" data-show-if="next_step!=Just send me a proposal">
+                  <div class="quote-field">
+                    <label for="quote-date">Preferred date <span class="required-mark">*</span></label>
+                    <input type="date" id="quote-date" name="preferred_date" data-required data-validate="future-date">
+                    <div class="quote-field-error">Please choose a date from tomorrow onwards.</div>
+                  </div>
+                  <div class="quote-field">
+                    <label for="quote-slot">Preferred time <span class="required-mark">*</span></label>
+                    <select id="quote-slot" name="preferred_slot" data-required>
+                      <option value="" selected disabled>Please select</option>
+                      <option value="Morning (8am - 12pm)">Morning (8am &ndash; 12pm)</option>
+                      <option value="Afternoon (12pm - 5pm)">Afternoon (12pm &ndash; 5pm)</option>
+                      <option value="Evening (5pm - 7pm)">Evening (5pm &ndash; 7pm)</option>
+                    </select>
+                    <div class="quote-field-error">This field is required.</div>
+                  </div>
+                </div>
+                <p class="quote-hint" data-show-if="next_step!=Just send me a proposal">We&rsquo;ll confirm the exact time with you before the appointment.</p>
+
+                <div class="quote-field">
+                  <label for="quote-notes">Anything else we should know?</label>
+                  <textarea id="quote-notes" name="notes" rows="3" placeholder="Access, special surfaces, start date, number of floors&hellip;"></textarea>
+                </div>
+
+                <div class="quote-field quote-consent">
+                  <label class="quote-check"><input type="checkbox" name="privacy" value="yes" data-required> I agree to Daynamic contacting me about this request and to the <a href="/privacy-policy" target="_blank">Privacy Policy</a>. <span class="required-mark">*</span></label>
+                  <div class="quote-field-error">Please accept to continue.</div>
+                  <label class="quote-check"><input type="checkbox" name="newsletter" value="yes"> Send me occasional cleaning tips and offers (optional).</label>
+                </div>
+
+                <div class="quote-nav">
+                  <button type="button" class="quote-back-button" data-back>Back</button>
+                  <button type="submit" class="quote-submit-button">Send request</button>
+                </div>
+              </fieldset>
+
+              <input type="hidden" name="source">
+              <div class="quote-form-status" role="status" aria-live="polite"></div>
+            </form>
+
+            <div class="quote-success" hidden tabindex="-1">
+              <p class="quote-form-title">Thank you &mdash; we&rsquo;ve got your request!</p>
+              <p>Our team will review your details and contact you shortly to confirm the next step.</p>
+              <p>Need us sooner? Call <a href="tel:+61450126979">+61 450 126 979</a>.</p>
+              <a href="/services" class="dn-button">Explore our services</a>
             </div>
-            <div class="quote-form-status" role="status" aria-live="polite"></div>
-          </form>
+          </div>
+
+          <aside class="quote-aside">
+            <div class="quote-aside-card">
+              <h2>Talk to us directly</h2>
+              <p><a href="tel:+61450126979">+61 450 126 979</a></p>
+              <p>Servicing Melbourne CBD and Greater Melbourne.</p>
+            </div>
+            <div class="quote-aside-card">
+              <h2>What happens next?</h2>
+              <ol>
+                <li>We review your site details.</li>
+                <li>We confirm your assessment or call.</li>
+                <li>You receive a tailored proposal.</li>
+              </ol>
+            </div>
+            <div class="quote-aside-card">
+              <h2>Why Daynamic?</h2>
+              <ul class="check-grid">
+                <li>Insured &amp; bonded</li>
+                <li>Background-checked cleaners</li>
+                <li>Our own supplies &amp; equipment</li>
+                <li>Eco-friendly products</li>
+              </ul>
+            </div>
+          </aside>
         </div>
       </div>
     </div>
@@ -277,28 +424,40 @@
             <div class="row footer-row mobile-center">
               <div class="text-block bold footer-title">Company</div>
               <div class="service-description footer-elements mobile-center">
-                <a href="about.html" class="footer-links">About</a>
+                <a href="/about" class="footer-links">About</a>
               </div>
               <div class="service-description footer-elements mobile-center">
-                <a href="services.html" class="footer-links">Services</a>
+                <a href="/services" class="footer-links">Services</a>
               </div>
               <div class="service-description footer-elements mobile-center">
-                <a href="blog.html" class="footer-links">Blog</a>
+                <a href="/blog" class="footer-links">Blog</a>
               </div>
               <div class="service-description footer-elements mobile-center">
-                <a href="faq.html" class="footer-links">FAQ</a>
+                <a href="/faq" class="footer-links">FAQ</a>
               </div>
               <div class="service-description footer-elements mobile-center">
-                <a href="https://forms.gle/pRDb18m6yZHCyTaN6" class="footer-links">Contact</a>
+                <a href="/quote" class="footer-links">Contact</a>
+              </div>
+            </div>
+            <div class="row footer-row row-margin mobile-center">
+              <div class="text-block bold footer-title">Services</div>
+              <div class="service-description footer-elements mobile-center">
+                <a href="/office-cleaning-melbourne" class="footer-links">Office &amp; Commercial Cleaning</a>
+              </div>
+              <div class="service-description footer-elements mobile-center">
+                <a href="/strata-cleaning-melbourne" class="footer-links">Strata &amp; Owner Corporation Cleaning</a>
+              </div>
+              <div class="service-description footer-elements mobile-center">
+                <a href="/hotel-apartment-cleaning-melbourne" class="footer-links">Hotel &amp; Serviced Apartment Cleaning</a>
               </div>
             </div>
             <div class="row footer-row row-margin mobile-center">
               <div class="text-block bold footer-title">Legal</div>
               <div class="service-description footer-elements mobile-center">
-                <a href="privacy-policy.html" class="footer-links">Privacy Policy</a>
+                <a href="/privacy-policy" class="footer-links">Privacy Policy</a>
               </div>
               <div class="service-description footer-elements mobile-center">
-                <a href="terms-of-use.html" class="footer-links">Terms of Use</a>
+                <a href="/terms-of-use" class="footer-links">Terms of Use</a>
               </div>
             </div>
           </div>
@@ -306,15 +465,15 @@
             <div class="row footer-row align-right">
               <div class="text-block bold footer-title footer-social">Follow us:</div>
               <div class="service-description footer-elements align-right">
-                <a href="https://www.linkedin.com/company/daynamic-cleaning/" target="_blank" class="link-block w-inline-block"><img src="images/iconmonstr-linkedin-3.svg" loading="lazy" width="30" alt="Daynamic Cleaning black Linkedin logoi con"></a>
-                <a href="https://www.instagram.com/daynamic.cleaning/" target="_blank" class="link-block w-inline-block"><img src="images/black-instagram-icon.svg" loading="lazy" width="30" alt="Daynamic Cleaning black Instagram logoi con"></a>
+                <a href="https://www.linkedin.com/company/daynamic-cleaning/" target="_blank" class="link-block w-inline-block"><img src="images/iconmonstr-linkedin-3.svg" loading="lazy" width="30" alt="Daynamic on LinkedIn"></a>
+                <a href="https://www.instagram.com/daynamic.cleaning/" target="_blank" class="link-block w-inline-block"><img src="images/black-instagram-icon.svg" loading="lazy" width="30" alt="Daynamic on Instagram"></a>
               </div>
             </div>
           </div>
         </div>
         <div class="copyrights">
           <div class="inside-wrapper align-left copywriting-inside">
-            <div class="text-block bold footer-title copywriting-section"><strong>®DAYNAMIC 2023 ALL RIGHTS RESERVED</strong></div>
+            <div class="text-block bold footer-title copywriting-section"><strong>© 2026 DAYNAMIC. ALL RIGHTS RESERVED</strong></div>
           </div>
         </div>
       </div>
